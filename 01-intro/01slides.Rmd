@@ -1,0 +1,236 @@
+---
+title: "Lecture 1"
+subtitle: "Intro"
+author: Marcelo Ortiz-Villavicencio
+date: ECON 725, Emory University
+output:
+  xaringan::moon_reader:
+    includes:
+        in_header: "mathjax-equation-numbers.html"
+        after_body: "insert-logo.html"
+    css: ['default', 'metropolis', 'metropolis-fonts', 'emory-colors.css']
+    # self_contained: true
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+    seal: false
+
+---
+
+
+```{r setup, include=FALSE}
+# xaringanExtra::use_scribble() ## Draw on slides. Requires dev version of xaringanExtra.
+library(tidyverse)
+library(hrbrthemes)
+library(fontawesome)
+```
+
+
+class: title-slide   
+
+
+
+# Econ 725: Computer Programming and Data Management in Economics 
+
+## Lecture 1: Welcome + Syllabus and set up
+
+<p align=center>
+Marcelo Ortiz-Villavicencio
+</p>
+<div style="margin-top: -.7cm;"></div>
+<p align=center>
+Emory University
+</p>
+</p>
+<br>
+<p align=center>
+Spring 2026
+</p>
+
+---
+class: center, middle
+name: prologue
+
+# Welcome to ECON 725!
+
+<html><div style='float:left'></div><hr color='#EB811B' size=1px width=1100px></html>
+
+---
+
+# Table of contents
+
+1. [Introduction](#introduction)
+
+2. [Syllabus highlights](#syllabus)
+
+3. [Getting started](#getting-started)
+
+---
+
+# Background
+
+### Me
+
+`r fa('address-book')` [Marcelo Ortiz](https://marcelortiz.com/)
+
+`r fa('envelope')` [marcelo.ortiz@emory.edu](mailto:marcelo.ortiz@emory.edu)
+
+`r fa('graduation-cap')` Fourth year PhD Student (econometrics, causal inference and machine learning)
+
+--
+
+### Work experience
+
+Before graduate school, I hold positions in the private sector:
+- Senior Data Scientist at [Rappi](https://about.rappi.com/es/inicio)
+- Data Scientist at [Maven Road](https://mavenroad.com/about/)
+- Research Consultant at [Inter-American Development Bank](https://www.iadb.org/en)
+
+---
+
+# Students
+
+- It is your turn!
+
+--
+
+- Please introduce yourself: 
+  - Name
+  - Background
+  - What do you expect to learn from this course?
+  - Any experience with programming or data science?
+
+---
+name: introduction
+# Introduction
+
+
+### Course Description 
+
+- This course focuses on programming and data management, with an emphasis on building skills for economic analysis and data science. 
+- You will learn how to access and manipulate various types of datasets and will equip you with the skills to create fully reproducible data analysis pipelines. 
+- Upon completing this course, students will be able to acquire, organize, explore, and construct basic data science models to analyze economic data and present reports in a dashboard. 
+
+`r fa('globe')` [Course Github](https://github.com/DataSciEcon-Emory/spring2026)
+
+In this repo you will find all the materials that we cover in each class. Including slides, code, and datasets.
+
+
+---
+class: center, middle
+name: syllabus
+
+# Syllabus highlights
+
+<html><div style='float:left'></div><hr color='#EB811B' size=1px width=1100px></html>
+
+Read the full document [here](https://emory.instructure.com/courses/159961/assignments/syllabus)
+---
+# Why this course?
+
+Fill in the gaps left by traditional econometrics and methods classes.
+
+- Practical skills with tools that will benefit your future career.
+- Neglected skills like how to actually find datasets in the wild and clean them.
+
+Data science skills are highly valuable in private and public sector!
+
+- Data viz, cleaning and wrangling; programming; cloud computation; relational databases; machine learning; etc.
+
+--
+
+> *"In short, we will cover things that I wish someone had taught me when I was finishing my undergraduate
+school."*
+
+---
+
+# You, at the end of this course
+
+<div align="center">
+<img src="pics/awesome.jpg">
+</div>
+
+---
+# Grading
+
+| Component                           | Weight |
+|:-|-:|
+| Attendance | 15% |
+| Online Learning | 20% |
+| In-class assessments	| 25% |
+| Mini-projects				        | 40% |
+
+> 🚨 All graded items must be submitted by the due date and in the manner determined by the instructor. No credit will be given for late submission or for submission by any other means which was not stipulated for the assignment. There is NO late submission policy in the sense that all assessments and/or mini projects submitted after the deadline will receive a grade of 0 (zero points)
+
+---
+name: getting-started
+# Topics
+
+- *Module 1*:  Command Line and Version Control
+  - Set up.
+  - Command line and the Terminal.
+  - Git and Github for version control.
+- *Module 2*:  Programming Essentials and Best Practices
+  - Python basics.
+  - Pandas, Mathematical operations with NumPy.
+  - Getting data from different sources: Web scrapping.
+  - Data Ingestion and transformation with SQL: SQLite.
+
+---
+# Topics (cont.)
+
+- *Module 3*:   Applied Data Science and Machine Learning Engineering
+  - Supervised Machine Learning.
+  - Experiment tracking and Model Management.
+  - Developing ML models for Production environments.
+  - ML in Economics: Debiased/Orthogonal Machine Learning (optional).
+- *Module 4*:  AI, Analytics Engineering and Data Visualization
+  - Docker, Images and containers for reproducible research.
+  - Using Large Language Models (LLMs) and Agentic AI.
+  - Data Visualizations and reporting in Dashboards.
+---
+
+# Set up Checklist
+
+- For this course, we are going to use most of the time cloud computing tools.
+- There are several options to choose from, but we are going to use [Github Codespaces](https://github.com/features/codespaces), [Colab Pro](https://colab.research.google.com/signup) and [Tableau](https://www.tableau.com/academic/students).
+- Before next class, I want you to go over the following checklist:
+
+☑ Create a [Github](https://github.com/) account (This is your first in-class assessment. See Canvas.)
+  - You will soon receive an invitation to the course organization on GitHub, as well as [GitHub classroom](https://classroom.github.com), which is how we'll use to submit assignments. 
+
+☑ Create a [Google Colab](https://colab.research.google.com/) account and a [Datacamp](https://app.datacamp.com/) account with Emory email address.
+  - Check [Canvas](https://emory.instructure.com/courses/159961/modules/items/3430210) where you will find the link to the group and your first assignment 😊
+
+
+
+---
+# Set up Checklist (cont.)
+
+☑ Get Access to [Github Education](https://github.com/education/students) benefits and [Microsoft Azure for Students](https://azure.microsoft.com/en-us/free/students)
+
+☑ Download [VS Code](https://code.visualstudio.com/)
+  - This is the integrated development environment (IDE) that we are going to use in this course in combination with GH Codespaces.
+
+☑ Download [Cursor](https://cursor.com/)
+  - This is a fork of VS Code that has AI capabilities built-in.
+  
+☑ Get Tableau Desktop for Students [here](https://www.tableau.com/tft/activation)
+  - You will need this for the last module of the course.
+
+---
+
+class: center, middle, thank-you-slide
+# Thanks!
+
+
+`r fa('link')` [marcelortiz.com](https://marcelortiz.com/)
+
+`r fa('envelope')` [marcelo.ortiz@emory.edu](mailto:marcelo.ortiz@emory.edu)
+
+`r fa('twitter')` [@marcelortizv](https://twitter.com/marcelortizv)
+
+
