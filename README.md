@@ -8,7 +8,7 @@
 
 
 ## Course description ##
-
+Hello!
 ECON 725 equips students with essential programming and computational data science skills tailored for economic analysis. Students will learn to use tools like 
 Python, Git, Docker, and Cloud Computing to create reproducible workflows, analyze data, and present 
 results through dashboards and visualizations. The course also covers machine learning techniques and practical methods for 
