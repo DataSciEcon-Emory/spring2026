@@ -1,6 +1,6 @@
 # ECON 725: Computer Programming and Data Management in Economics (Spring 2026)
 
-| Instructor | [Marcelo Ortiz-Villavicencio](https://marcelortiz.com/) |
+| Instructor | [Aden Diaz](https://marcelortiz.com/) |
 |--------------|--------------------------------------------------------------|
 | Email | [marcelo.ortiz@emory.edu](mailto:marcelo.ortiz@emory.edu) |
 | Office Hours | See Canvas for info |
