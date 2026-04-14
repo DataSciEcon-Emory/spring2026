@@ -1,0 +1,117 @@
+_wandb:
+    value:
+        cli_version: 0.26.0
+        e:
+            hs5x28g6xu8ybqgt0kvg1nq25czjqcuc:
+                apple: {}
+                codePath: /Users/marcelortiz/Library/CloudStorage/OneDrive-Emory/ECON 725 - Computer Programming and Data Management/ECON725-SP2026/spring2026/05-appliedML/04-experiment-tracking.ipynb
+                codePathLocal: 04-experiment-tracking.ipynb
+                cpu_count: 15
+                cpu_count_logical: 15
+                disk:
+                    /:
+                        total: "994610155520"
+                        used: "186720550912"
+                email: marcelortiz1296@hotmail.com
+                executable: /Users/marcelortiz/anaconda3/bin/python
+                git:
+                    commit: ddd2c6ce7e39f60a68ef9135dd628fb2cc155d0e
+                    remote: https://github.com/DataSciEcon-Emory/spring2026.git
+                host: Marcelos-MacBook-Pro.local
+                memory:
+                    total: "25769803776"
+                os: macOS-26.4.1-arm64-arm-64bit-Mach-O
+                program: /Users/marcelortiz/Library/CloudStorage/OneDrive-Emory/ECON 725 - Computer Programming and Data Management/ECON725-SP2026/spring2026/05-appliedML/04-experiment-tracking.ipynb
+                python: CPython 3.13.9
+                root: /Users/marcelortiz/Library/CloudStorage/OneDrive-Emory/ECON 725 - Computer Programming and Data Management/ECON725-SP2026/spring2026/05-appliedML
+                startedAt: "2026-04-14T13:19:31.974382Z"
+                writerId: hs5x28g6xu8ybqgt0kvg1nq25czjqcuc
+        m: []
+        python_version: 3.13.9
+        t:
+            "1":
+                - 5
+                - 53
+            "2":
+                - 5
+                - 53
+            "3":
+                - 2
+                - 13
+            "4": 3.13.9
+            "5": 0.26.0
+            "8":
+                - 1
+            "12": 0.26.0
+            "13": darwin-arm64
+        visualize:
+            precision_recall:
+                panel_config:
+                    fieldSettings:
+                        class: class
+                        x: recall
+                        "y": precision
+                    panelDefId: wandb/area-under-curve/v0
+                    stringSettings:
+                        title: Precision-Recall Curve
+                        x-axis-title: Recall
+                        y-axis-title: Precision
+                    transform:
+                        name: tableWithLeafColNames
+                    userQuery:
+                        queryFields:
+                            - args:
+                                - name: runSets
+                                  value: ${runSets}
+                              fields:
+                                - fields: []
+                                  name: id
+                                - fields: []
+                                  name: name
+                                - fields: []
+                                  name: _defaultColorIndex
+                                - args:
+                                    - name: tableKey
+                                      value: precision_recall_table
+                                  fields: []
+                                  name: summaryTable
+                              name: runSets
+                panel_type: Vega2
+            roc:
+                panel_config:
+                    fieldSettings:
+                        class: class
+                        x: fpr
+                        "y": tpr
+                    panelDefId: wandb/area-under-curve/v0
+                    stringSettings:
+                        title: ROC Curve
+                        x-axis-title: False positive rate
+                        y-axis-title: True positive rate
+                    transform:
+                        name: tableWithLeafColNames
+                    userQuery:
+                        queryFields:
+                            - args:
+                                - name: runSets
+                                  value: ${runSets}
+                              fields:
+                                - fields: []
+                                  name: id
+                                - fields: []
+                                  name: name
+                                - fields: []
+                                  name: _defaultColorIndex
+                                - args:
+                                    - name: tableKey
+                                      value: roc_table
+                                  fields: []
+                                  name: summaryTable
+                              name: runSets
+                panel_type: Vega2
+        viz:
+            confusion_matrix:
+                historyFieldSettings:
+                    key: confusion_matrix
+                    x-axis: _step
+                id: wandb/confusion_matrix/v1
