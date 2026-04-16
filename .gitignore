@@ -7,3 +7,7 @@
 .claude/
 05-appliedML/aclImdb/
 05-appliedML/aclImdb_v1.tar.gz
+05-appliedML/artifacts/
+artifacts/
+wandb/
+tea_debug.log

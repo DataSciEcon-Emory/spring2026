@@ -19,7 +19,7 @@ def run_train():
     config = wandb.config
 
     # Fetch the latest version of the dataset artifact 
-    artifact = wandb.use_artifact('marcelortizv/econ725-f2025/Titanic:latest', type='dataset')
+    artifact = wandb.use_artifact('marcelortizv/econ725-sp2026/Titanic:latest', type='dataset')
     artifact_dir = artifact.download()
 
     # Read the files
@@ -110,5 +110,5 @@ SWEEP_CONFIG = {
 
 
 if __name__ == "__main__":
-    sweep_id = wandb.sweep(SWEEP_CONFIG, project="econ725-f2025")
+    sweep_id = wandb.sweep(SWEEP_CONFIG, project="econ725-sp2026")
     wandb.agent(sweep_id, run_train, count=5)
